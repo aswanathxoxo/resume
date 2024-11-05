@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Attire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3, h4 {
+            color: #007BFF;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .screenshot-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .screenshot {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: transform 0.3s ease, border-color 0.3s ease, filter 0.3s ease;
+        }
+
+        .screenshot:hover img {
+            transform: scale(1.1);
+            border-color: #0056b3;
+            filter: brightness(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .screenshot:hover .caption {
+            color: #007BFF;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Imperial Attire</h1>
+    </header>
+
+    <section class="content">
+        <h2>About Imperial Attire</h2>
+        <p>Imperial Attire is an e-commerce website for a clothing brand, created as our team project. The goal was to develop a user-friendly and secure online shopping platform.</p>
+        
+        <h3>Features</h3>
+        <h4>User Account Management</h4>
+        <p>Users can create accounts, log in securely, and manage their profiles and purchases.</p>
+
+        <h4>Product Catalog and Shopping Cart</h4>
+        <p>Users can browse products, add them to their cart, and proceed to checkout.</p>
+
+        <h4>Admin Dashboard</h4>
+        <p>Admins can manage the product catalog, adding, updating, and removing items.</p>
+
+        <h3>Technologies Used</h3>
+        <ul>
+            <li>Spring Boot</li>
+            <li>Maven</li>
+            <li>JSP (JavaServer Pages)</li>
+            <li>MySQL</li>
+        </ul>
+
+        <h3>Team Members</h3>
+        <ul>
+            <li>Abhijith M A - Cart functionality</li>
+            <li>Aswanath J S - Admin and product management</li>
+            <li>Meenakshi Shibu - Customer functionality</li>
+            <li>Archa Radhakrishnan Pillai - CSS design</li>
+            <li>Vinaya V S - CSS design</li>
+        </ul>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot-container">
+            <div class="screenshot">
+                <img src="./image/1.png" alt="Customer Login Page">
+                <div class="caption">Customer Login Page</div>
+            </div>
+            <div class="screenshot">
+                <img src="./image/2.png" alt="Admin Login Page">
+                <div class="caption">Admin Login Page</div>
+            </div>
+            <div class="screenshot">
+                <img src="./image/3.png" alt="Add New Product Page">
+                <div class="caption">Add New Product Page</div>
+            </div>
+            <div class="screenshot">
+                <img src="./image/4.png" alt="Product Listing Page">
+                <div class="caption">Product Listing Page</div>
+            </div>
+            <div class="screenshot">
+                <img src="./image/5.png" alt="Cart List Page">
+                <div class="caption">Cart List Page</div>
+            </div>
+            <div class="screenshot">
+                <img src="./image/6.png" alt="About Us Page">
+                <div class="caption">About Us Page</div>
+            </div>
+            <div class="screenshot">
+                <img src="./image/7.png" alt="Sign Up Page">
+                <div class="caption">Sign Up Page</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aswanath J S. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

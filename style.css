@@ -1,0 +1,166 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Changed to match Imperial Attire's background */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+}
+
+/* Background Gradient */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(244, 246, 248, 0.3));
+    z-index: -1; /* Send the gradient to the back */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px; /* Maximum width for the content */
+    margin: 40px auto; /* Centered with margin */
+    padding: 20px; /* Padding for inner content */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+h1 {
+    font-size: 28px; /* Font size for main header */
+    color: #2c3e50; /* Dark blue color */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Space below header */
+    text-align: center; /* Center the main title */
+}
+
+h2 {
+    font-size: 22px; /* Font size for secondary header */
+    color: #34495e; /* Darker blue color */
+    margin-top: 20px; /* Space above header */
+    margin-bottom: 10px; /* Space below header */
+    border-bottom: 2px solid #e74c3c; /* Red underline */
+    padding-bottom: 5px; /* Padding below */
+}
+
+h3 {
+    font-size: 18px; /* Font size for tertiary header */
+    color: #2980b9; /* Lighter blue color */
+    margin-bottom: 10px; /* Space below header */
+}
+
+p {
+    margin-bottom: 10px; /* Space below paragraphs */
+}
+
+/* Section and List Styles */
+ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+li {
+    margin-bottom: 8px; /* Space between list items */
+    font-size: 16px; /* Font size for list items */
+}
+
+li:before {
+    content: "\2022"; /* Custom bullet */
+    color: #e74c3c; /* Red color for bullet */
+    font-weight: bold; /* Bold bullet */
+    display: inline-block; /* Inline block for alignment */
+    width: 1em; /* Width for bullet spacing */
+    margin-left: -1em; /* Adjust margin for bullets */
+}
+
+/* Main Points and Subpoints in Experience */
+.experience > li {
+    font-weight: bold; /* Bold text for experience items */
+    color: #2c3e50; /* Dark blue color */
+    margin-top: 10px; /* Space above items */
+    padding: 10px; /* Padding for items */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for items */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+.experience > li ul {
+    padding-left: 20px; /* Indentation for subpoints */
+    margin-top: 5px; /* Space above subpoints */
+}
+
+.experience > li ul li {
+    font-weight: normal; /* Normal weight for subpoints */
+    font-size: 15px; /* Font size for subpoints */
+    color: #555; /* Darker gray for subpoints */
+}
+
+/* Link Styles */
+a {
+    color: #2980b9; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #e74c3c; /* Red color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Highlight Sections */
+.education,
+.experience,
+.skills,
+.additional-info {
+    margin-bottom: 20px; /* Space below sections */
+}
+
+/* About Me and Contact Links */
+.additional-info a {
+    display: inline-block; /* Block display for buttons */
+    margin: 5px 0; /* Vertical margin */
+    padding: 8px 12px; /* Padding for buttons */
+    color: #ffffff; /* White text for buttons */
+    background-color: #34495e; /* Dark blue background */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.additional-info a:hover {
+    background-color: #e74c3c; /* Change background color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size for headers */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller font size for secondary headers */
+    }
+
+    h3 {
+        font-size: 16px; /* Smaller font size for tertiary headers */
+    }
+
+    li {
+        font-size: 14px; /* Smaller font size for list items */
+    }
+}
